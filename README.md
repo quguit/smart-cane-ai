@@ -24,3 +24,25 @@ The system monitors gait patterns and helps track recovery or detect deteriorati
 
 ---
 *This project is under development. Contributions and ideas are welcome!*
+
+
+# Next step
+
+## Clinical Gait Features
+
+Instead of relying only on raw sensor data, this project extracts **clinical gait features** from accelerometer and gyroscope signals.  
+These features are widely used in rehabilitation and gait analysis, and allow the AI model to detect meaningful differences between healthy and impaired walking patterns.
+
+### Implemented Features
+- **Step Time** – average time between steps (slower and more variable in stroke patients)  
+- **Cadence** – number of steps per minute (indicator of walking speed and endurance)  
+- **Step Length Variability** – irregularity in step size, often linked to instability  
+- **Gait Symmetry** – balance between left and right steps (asymmetry is common after stroke)  
+- **Step Regularity** – consistency of step cycles, measured via autocorrelation  
+- **Harmonic Ratio** – stability of gait pattern in the frequency domain  
+
+### Advantages
+- Transforms raw sensor signals into **clinically interpretable metrics**  
+- Enables **objective monitoring** of patient progress over time  
+- Helps clinicians distinguish between **improvement, deterioration, or abnormal gait events**  
+- Provides a compact and informative feature vector for AI models, reducing noise and improving accuracy
